@@ -1,0 +1,108 @@
+.admin-dashboard {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 0 !important;
+  position: fixed;
+}
+
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 2px solid rgb(65, 65, 65);
+}
+.dashboard-left > img {
+  width: 150px;
+}
+
+.admin_actions.shadow {
+  background: #5e5d5d;
+}
+.dashboard-left .admin_actions:hover{
+  background: #5e5d5d;
+}
+.dashboard-left .admin_actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+.dashboard-left .admin_actions img {
+  padding: 0 1rem;
+}
+.add-product {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  top: 3rem;
+}
+.add-prod-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.add-prod-detail > input,
+select {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+.add-prod-detail > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.add-prod-detail > div:first-child label {
+  color: black;
+  padding: 6rem;
+}
+.add-prod-detail > div > input {
+  width: 100%;
+}
+select,
+input {
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.add-prod-detail div.price {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.add-prod-detail > div {
+  width: 70%;
+  border-radius: 8px;
+}
+.prod_action {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+}
+.prod_action > span {
+  width: 111px;
+  height: 35px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+}
