@@ -1,0 +1,65 @@
+.signInMdel {
+  position: fixed;
+  width: 500px;
+  z-index: 999;
+  left: 50%;
+  
+  top: 55px;
+  margin-left: -250px;
+  min-height: 200px;  
+  padding: 0.6rem 1rem;
+  background: #FFFFFF;
+  border: 1px solid #ADA9A9;
+  border-radius: 8px;
+}
+.signInDialogClose{
+  width: 15px;
+}
+.checkput__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_class form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signInMdel .form_class form>* {
+  padding: 0 1.5rem;
+  outline: none;
+  width: 400px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #AEACAC;
+  border-radius: 32px;
+  margin: .6rem 0;
+}
+
+.form_class form button {
+  height: 34px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.105em;
+
+  color: #FFFFFF;
+  border: none;
+  background: #FF1D1D !important;
+  border-radius: 32px;
+}
+
+@media screen and (max-width:500px ) {
+  .signInMdel {
+    right: 0!important;
+    width: 80vw;
+    left: 5vw;
+    top: 6.5rem;
+    margin-left:0px;
+  }
+  .signInMdel .form_class form>*{ 
+    width:68vw !important;
+  }
+}
