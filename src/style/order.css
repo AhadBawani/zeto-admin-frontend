@@ -1,0 +1,141 @@
+.current_order,
+.past_order {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.order_body {
+  width: 99.5vw;
+  background: #f2f2f2;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.order_body > * {
+  width: 70vw;
+  margin: 0 auto;
+}
+.order_header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.order_header .order_filter span {
+  display: inline-block;
+  border: 1px solid #9f9b9b;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+.order_header .order_filter span:hover{
+  background: #000000;
+  color: #ffffff;
+  transition: .5s;
+}
+.order_card {
+  height: 132px;
+  background: #ffffff;
+  border: 1px solid #bfbfbf;
+  display: flex;
+}
+.order_card {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.order_card > img {
+  width: 10vw;
+}
+.order_card .card_right {
+  width: 60vw;
+  height: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+
+  align-items: center;
+}
+.card_right .ll {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card_right .ll > * {
+  line-height: 2rem;
+}
+.card_right .ll > *:nth-child(1) {
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+.card_right .ll > *:nth-child(2) {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.card_right .ll > *:nth-child(3) {
+  cursor: pointer;
+  font-size: 1rem;
+}
+.card_right .lr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  .order_body > * {
+    width: 95vw;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+  .order_filter span {
+    font-size: 1rem;
+  }
+  .order_header {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 0;
+  }
+  .current_order .order_card {
+    height: 25vw;
+  }
+  .past_order .order_card {
+    height: 30vw;
+  }
+  .current_order .order_card > img {
+    width: 24vw;
+    height: 24vw;
+  }
+  .past_order .order_card > img {
+    width: 27vw;
+    height: 29vw;
+  }
+  .order_card .card_right {
+    flex-direction: column;
+    padding: 0rem 0.7rem;
+    align-items: flex-start;
+    font-size: 1rem;
+    height: 100%;
+  }
+  .card_right .ll {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_right .ll > * {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .card_right .ll > *:nth-child(1) {
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .card_right .ll > *:nth-child(2) {
+    cursor: pointer;
+    font-size: 0.7rem;
+  }
+  .card_right .lr {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
