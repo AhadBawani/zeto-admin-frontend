@@ -1,0 +1,33 @@
+.fpwd {
+}
+.fpwd .checkput__form {
+  width: 100%;
+  margin-top: 2rem;
+}
+.fpwd .checkput__form > * {
+  margin: 0.8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fpwd .checkput__form input {
+  width: 25vw;
+}
+.fpwd .checkput__form > span {
+  width: 100% !important;
+  white-space: nowrap;
+}
+.fpwd .checkput__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fpwd .checkput__form form input {
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 0 1rem;
+}
+.fpwd .checkput__form form label{
+  margin-left: .5rem;
+  margin-top: 1rem;
+}
