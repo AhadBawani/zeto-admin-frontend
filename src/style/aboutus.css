@@ -1,0 +1,74 @@
+.au-body {
+  margin: 0 auto;
+}
+.au-body > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.au-body .au-sec1 {
+  margin: 1rem 0;
+}
+.au-body .au-sec1 p {
+  width: 400px;
+}
+.au-body .au-sec1 h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.au-body > img {
+  height: 457px;
+  width: 99vw;
+}
+
+.au-body .au-sec2 {
+  display: grid;
+  grid-template-columns: 30% 65%;
+}
+
+.au-body .au-sec3 {
+  display: grid;
+  grid-template-columns: 30% 65%;
+}
+.au-body .au-sec3 > h1 {
+  margin-left: 3rem;
+}
+.au-body .au-sec3 > div {
+  margin-right: 3rem;
+}
+
+.au-body .au-sec4 {
+  display: grid;
+  grid-template-columns: 30% 65%;
+}
+
+.au-body .au-sec2 > h1 {
+  margin-left: 3rem;
+}
+
+.au-body .au-sec3 > h1 {
+  margin-left: 3rem;
+}
+.au-body .au-sec3 > div {
+  margin-right: 3rem;
+}
+.au-body .au-sec4 > h1 {
+  margin-left: 3rem;
+}
+.au-body .au-sec4 > div {
+  margin-right: 3rem;
+}
+
+.au-body p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.au-sec5 .au-contact
+{
+  background: red;
+}

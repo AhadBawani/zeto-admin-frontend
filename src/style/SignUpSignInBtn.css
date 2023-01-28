@@ -1,0 +1,42 @@
+   /* Test */
+   .login_logout {
+        width: 150px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 32px;
+        margin-right: 70px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+   }
+
+   .login_logout .logout {
+        border: none;
+        height: 100%;
+        width: 45%;
+        border-radius: 32px;
+        color: rgb(0, 0, 0);
+        background: transparent;
+
+        position: absolute;
+        right: 0;
+   }
+
+   .loginActive {
+        background: #000000 !important;
+        height: 100%;
+        color: white !important;
+        width: 55% !important;
+   }
+
+   .login_logout .login {
+        border: none;
+        width: 45%;
+        border-radius: 32px;
+        margin-left: .5rem;
+        background: transparent;
+        position: absolute;
+        left: -.5rem;
+   }
