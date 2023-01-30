@@ -1,0 +1,83 @@
+.pap {
+  width: 99vw;
+}
+.pap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 90vw;
+  margin: 0 auto;
+}
+.pap-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlight li {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+.pap-container .pap-body {
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  position: relative;
+}
+.pap-right {
+  max-height: 100vh;
+  position: fixed;
+  width: 30vw;
+  right: 0;
+  top: 4rem;
+}
+.pap-left h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.pap-right ol {
+  margin-left: 1rem;
+}
+.pap-right ol li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #040404;
+  cursor: pointer;
+}
+.pap-body p {
+  margin: 0.8rem 1.5rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #040404;
+}
+.pap-left strong {
+  color: black;
+}
+.pap-left span {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(18, 18, 18);
+}
+@media screen and (max-width: 500px) {
+  .pap-container {
+    width: 97vw;
+  }
+  .pap-header {
+    margin: 1rem 0;
+  }
+  .pap-container .pap-body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .pap-right {
+    position: static !important;
+    width: 95vw;
+  }
+
+  .pap-left h2 {
+    font-size: 1.3rem;
+  }
+}

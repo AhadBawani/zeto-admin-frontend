@@ -1,0 +1,128 @@
+.product {
+  width: 340px;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.product.disabled {
+  position: relative;
+  pointer-events: none;
+}
+.product.disabled::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgb(0, 0, 0);
+  opacity: 0.3;
+}
+
+.product .product__detail {
+  width: 240px;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.product .product__detail > * {
+  padding: 0.1rem 0;
+}
+.product > img {
+  object-fit: contain;
+  width: 90px;
+  height: 110px;
+}
+
+.product__detail > span:nth-child(1) {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.product__detail > span:nth-child(2) {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #a6a4a4;
+}
+.product__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.product__price > * {
+  font-size: 14px;
+}
+
+.product__price > span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+}
+
+.product__price > span:nth-child(3) {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.product__price > span:nth-child(1) > span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.product__price > span:nth-child(2) {
+  font-weight: 250;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.product__price > span:nth-child(2) > span {
+  text-decoration: line-through;
+}
+
+.addBtn {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.addBtn:hover {
+  background: #d3d3d3;
+  transition: 0.2s;
+  letter-spacing: 1.5px;
+}
+.addBtn.disabled {
+  width: auto;
+  height: 32px;
+  padding: 0.1rem 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .product {
+    width: 99%;
+  }
+  .product .product__detail {
+    width: 73%;
+  }
+}
