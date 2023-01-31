@@ -1,0 +1,146 @@
+.fh_home {
+  width: 99vw;
+  min-height: 100vh;
+  overflow: hidden !important;
+}
+
+.fh_main {
+  display: grid;
+  grid-template-columns: auto 300px;
+}
+.fh_main > section:last-child {
+  position: fixed;
+  right: 0;
+  border-left: 1px solid rgba(169, 166, 166, 0.9);
+  width: 300px;
+  min-height: 100vh;
+  z-index: 0;
+}
+.foodpage .nav_center {
+  display: none;
+}
+.fh_main > section:first-child {
+  margin: 0 auto;
+  position: relative;
+}
+.fh_hero {
+  margin: 0.5rem 0;
+}
+.fh_hero h2 {
+  margin-top: 1.7rem;
+}
+.fh_hero_img {
+  position: relative;
+  border-radius: 20px;
+}
+.fh_hero_img > img {
+  height: 250px;
+  width: 70vw;
+  border-radius: 20px;
+}
+.fh_seller_logo img {
+  width: 100%;
+  height: 100%;
+}
+.fh_seller_logo {
+  position: absolute;
+  overflow: hidden;
+  bottom: -30px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.food_slider {
+  margin: 1rem 0;
+}
+
+.food_slider .fs_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fs_head > div img {
+  width: 20px;
+  height: 20px;
+  padding: 0.4rem;
+  background: #bbbbbb;
+  border-radius: 50px;
+  margin: 0 0.21rem;
+}
+
+.fs_items .fs_image {
+  width: 150px;
+  height: 150px;
+}
+.fs_items::-webkit-scrollbar {
+  display: none;
+}
+.fs_items {
+  display: flex;
+  column-gap: 1rem;
+  width: 70vw;
+  overflow-x: scroll;
+}
+.fs_item_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.fs_image {
+  position: relative;
+}
+.fs_image span {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fs_image span:hover {
+  background: #d3d3d3;
+  transition: 0.2s;
+}
+.fs_items span {
+  font-weight: 500;
+}
+.fs_items .fs_image img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .fh_main > section:last-child.cartActive {
+    display: none;
+  }
+  .fh_home {
+    width: 96vw;
+    padding: 0 1vw;
+  }
+  .food_slider .fs_head {
+    margin: 0 1rem;
+  }
+  .fs_items {
+    width: 96vw;
+    margin: 0 2vw;
+  }
+  .fh_hero_img > img {
+    height: 150px;
+    width: 95vw;
+    margin: 0 2vw;
+  }
+}
