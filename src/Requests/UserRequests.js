@@ -1,4 +1,4 @@
-const url = 'http://52.66.195.69:5000/';
+const url = 'http://65.2.190.222:5000/';
 // const url = "http://localhost:5000/";
 
 const UserRequests = {
