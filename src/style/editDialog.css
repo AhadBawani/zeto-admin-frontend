@@ -1,0 +1,88 @@
+.edit_dialog {
+  position: fixed;
+  width: 600px;
+  z-index: 999;
+  left: 55%;
+  top: 15vh;
+  margin-left: -550px;
+  min-height: 200px;
+  padding: 0.6rem 1rem;
+  background: #ffffff;
+  border: 1px solid #ada9a9;
+  border-radius: 8px;
+}
+.hide.edit_dialog {
+  display: none;
+}
+.close_editInfo {
+  position: absolute;
+  border-radius: 50%;
+  right: 1rem;
+  width: 25px;
+  height: 25px;
+  padding: .2em;
+
+  background: #ede9e9;
+}
+.edit_dialog > .edit_address,
+.edit_num > form {
+  margin: 0 auto;
+}
+.edit_address {
+  display: flex;
+  justify-content: flex-start;
+}
+.edit_dialog form {
+  display: flex;
+  width: 338px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.edit_address form select,
+input {
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #aeacac;
+  outline: none;
+  padding-left: 1rem;
+}
+.edit_address form select {
+  width: 336px;
+  /* padding-left: 1rem; */
+}
+.edit_address form input {
+  width: 106px;
+}
+
+.edit_dialog .checkoutBtn{
+  display: flex !important;
+  border: none;
+}
+.edit_num input {
+  width: 320px;
+}
+
+@media screen and (max-width: 500px){
+  .edit_dialog {
+    position: fixed;
+    width: 85vw;
+    left: 2vw;
+    right: 2vw;
+    margin:0;
+  }
+
+  .edit_dialog form{
+    width: 88vw;
+  }
+  .edit_address form select {
+    width: 85vw;
+  }
+  .edit_dialog button{
+    width: 85vw;
+  }
+  .edit_num input{
+    width: 80vw;
+  }
+}
