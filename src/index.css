@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+li {
+  list-style: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.nav_right img{
+  border-radius: 50px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+.root{
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.down_border {
+  display: inline-block;
+  position: relative;
+}
+.loader {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.loaders {
+  display: flex;
+  align-items: center;
+  left: 50%;
+  margin-left: -1rem;
+  bottom: 0.2rem;
+  justify-content: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  animation: spin 1s linear infinite;
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 50px;
+  border-top: none;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 50px;
+  border-top: none;
+  left: 50%;
+  margin-left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.load {
+  position: relative;
+  background-color: rgb(43, 43, 43) !important;
+}
