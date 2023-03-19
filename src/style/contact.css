@@ -1,0 +1,79 @@
+.contact {
+  width: 100%;
+}
+.contact .nav_center {
+  display: none;
+}
+
+.c-user-detail {
+  width: 65vw;
+  margin: 0 auto;
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+
+.c-user-detail * {
+  outline: none !important;
+}
+
+.c-user-detail .c-input-table {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: space-between;
+}
+.c-input-table > div {
+  width: 362px;
+  display: flex;
+  flex-direction: column;
+}
+.c-input-table div > input,
+select {
+  width: 100%;
+  height: 49px;
+  background: #ece7e7;
+  border: none;
+  font-size: 1.1rem;
+}
+.c-input-table div > select {
+  width: 380px;
+}
+.c-user-detail textarea {
+  background: #ece7e7;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 8rem !important;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.c-user-detail button {
+  width: 362px;
+  height: 49px;
+  color: white;
+  background: red;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.5s;
+  margin: 1rem 0;
+}
+.c-user-detail button:hover {
+  background: rgb(115, 1, 1);
+}
+.c-user-detail label {
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .c-user-detail {
+    width: 95vw;
+  }
+  .c-user-detail textarea {
+    width: 83vw !important;
+  }
+}

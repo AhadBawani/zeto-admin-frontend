@@ -1,0 +1,124 @@
+.signInMdel {
+  position: fixed;
+  width: 500px;
+  height: 471px;
+  z-index: 999;
+  left: 50%;
+  top: 55px;
+  margin-left: -250px;
+  min-height: 200px;
+  padding: 0.6rem 1rem;
+  background: #ffffff;
+  border: 1px solid #ada9a9;
+  border-radius: 8px;
+}
+.signInDialogClose {
+  width: 15px;
+}
+.checkput__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_class > .lo {
+  margin-top: 2rem;
+}
+.form_class form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signInMdel .form_class form > * {
+  padding: 0 1.5rem;
+  outline: none;
+  width: 400px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #aeacac;
+  border-radius: 32px;
+  margin: 0.6rem 0;
+
+}
+
+.form_class form button {
+  padding: 0 !important;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.105em;
+  color: #ffffff;
+  border: none;
+  background: #ff1d1d !important;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.newuser {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.newuser strong {
+  cursor: pointer;
+  color: #54adff;
+}
+/* For Otp Componants */
+.otp {
+}
+
+.opt-form {
+  display: flex;
+  margin: 2rem 0;
+  margin-top: 5rem;
+}
+.otp h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+
+  color: #000000;
+}
+.opt-form input {
+  width: 40px;
+  height: 40px;
+  background: #d9d9d9;
+  margin: 0 0rem;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.otpVerify {
+  cursor: pointer;
+  margin: 1rem 0;
+  width: 226px;
+  height: 34px;
+  border: none;
+  background: #ff1d1d;
+  color: white;
+  border-radius: 32px;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .signInMdel {
+    right: 0 !important;
+    width: 90vw;
+    left: 5vw;
+    top: 6.5rem;
+    margin-left: 0px;
+  }
+  .signInMdel .form_class form > * {
+    width: 68vw !important;
+  }
+}
