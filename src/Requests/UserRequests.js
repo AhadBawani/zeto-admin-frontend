@@ -1,5 +1,5 @@
 // const url = "http://localhost:5000/";
-const url = "https://13.235.243.136/";
+const url = "http://13.235.243.136/";
 const UserRequests = {
     PRODUCT_IMG: url + 'Images/',
     SELLER_IMG: url + 'SellerImages/',
