@@ -1,0 +1,84 @@
+.o-detail {
+   width: 90vw;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.o-detail > *:not(:first-child) {
+   padding: 1rem 0;
+   border-bottom: 2px solid black;
+}
+.o-detail span {
+   color: black;
+   font-size: 14px;
+}
+.o-detail strong {
+   font-size: 1rem !important;
+}
+.user {
+   width: 100%;
+}
+.user h1 {
+   border-bottom: 2px solid black;
+   margin-bottom: 0.8rem;
+   padding-bottom: 0.8rem;
+}
+.user .user-detail {
+   display: grid;
+   grid-template-columns: 30% 30% auto;
+}
+.user .user-detail .u-d-right span {
+   float: right;
+   padding: 0.5rem 1.5rem;
+   border: 1px solid black;
+}
+.o-product {
+   width: 100%;
+}
+.o-product-list {
+   display: grid;
+   grid-template-columns: 40% 15% 15% 15% 15%;
+}
+
+.o-product-list > div:not(:first-child) > * {
+   text-align: center;
+   white-space: nowrap;
+   width: 100%;
+   display: inline-block;
+}
+.o-product .o-product-list:last-child strong {
+   width: 100% !important;
+   display: inline-block;
+   margin-top: 0.5rem;
+   padding-top: 0.5rem;
+   border-top: 2px solid black;
+}
+.total {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.total button {
+   width: 124px;
+   height: 39px;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+
+@media screen and (max-width:500px) {
+   .user .user-detail{
+      grid-template-columns: 60% 40% ;
+      
+   }
+   .o-product-list > div:nth-child(3){
+      display: none;
+   }
+   .o-product-list > div:nth-child(4){
+      display: none;
+   }
+   .o-product-list{
+      grid-template-columns: 50%  25% 25%;
+   }
+}
