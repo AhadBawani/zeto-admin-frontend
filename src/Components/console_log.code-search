@@ -1,0 +1,344 @@
+# Query: console.log
+# ContextLines: 1
+
+75 results - 40 files
+
+sending\src\Components\EditDialog.jsx:
+  24          .then((res) => {
+  25:          
+  26            dispatch(UserAction({ ...user, phoneNumber: mobile }));
+
+sending\src\Components\ForgotPassword.jsx:
+  53          if (response) {
+  54:         
+  55            dispatch(FPWDAction("cpwd"));
+
+  84            dispatch(BtnLoaderAction(""));
+  85:         
+  86          });
+
+sending\src\Components\OtpDialog.jsx:
+  27        .then((res) => {
+  28:       
+  29          dispatch(OtpAction(false));
+
+  32        .catch((err) => {
+  33:        
+  34          toast.error("Invalid OTP");
+
+sending\src\Components\ProductCard.jsx:
+   24            })
+   25:           .catch((error) =>{});
+   26        } else {
+
+   38            .catch((error) => {
+   39:            
+   40            });
+
+  102          .catch((error) => {
+  103:          
+  104          });
+
+sending\src\Components\Rating.jsx:
+  38        };
+  39:      
+  40        axios
+
+sending\src\Components\SidebarCartCard.jsx:
+  29          .catch(err=>{
+  30:         
+  31          })
+
+  53          .catch((error) => {
+  54:        
+  55          });
+
+  84          })
+  85:         .catch((error) => {});
+  86      } else {
+
+sending\src\Components\SignUpDialog.jsx:
+  84            dispatch(BtnLoaderAction(null));
+  85:         
+  86            toast.error("Invelid Number or Password");
+
+sending\src\Pages\Checkout.js:
+  112                };
+  113:            
+  114                product.push(obj);
+
+  142        .catch((error) => {
+  143:        
+  144        });
+
+sending\src\Pages\Contact.jsx:
+  21    const submitHandle = () => {
+  22:     console.log(contactData);
+  23    };
+
+sending\src\Pages\FoodHome.jsx:
+   25      Products?.filter((item) => item.mainCategory === "Food") || [];
+   26:  
+   27    const ref1 = useRef(null);
+
+   39            })
+   40:           .catch((error) => {});
+   41        } else {
+
+   53            .catch((error) => {
+   54:            
+   55            });
+
+  117          .catch((error) => {
+  118:          
+  119          });
+
+sending\src\Pages\Home.jsx:
+  35        .then((res) => {
+  36:       
+  37          dispatch(SellerAction(res.data));
+
+sending\src\Pages\Order.jsx:
+  19    useEffect(() => {
+  20:   
+  21      if (user?._id) {
+
+sending\src\Pages\ProdHome.js:
+  72              .catch((error) => {
+  73:            
+  74              });
+
+  93      ref.current.scrollLeft += scrollOffset;
+  94:    
+  95    };
+
+sending\src\Pages\Profile.jsx:
+  25    const user = useSelector((state) => state?.User?.user);
+  26:  
+  27    const [update, setUpdate] = useState({
+
+sending\src\Routing\Routing.js:
+  31          .catch((err) => {
+  32:        
+  33          });
+
+v7\src\Components\EditDialog.jsx:
+  29          .then((res) => {
+  30:         
+  31            dispatch(UserAction({ ...user, phoneNumber: mobile }));
+
+v7\src\Components\ForgotPassword.jsx:
+  53          if (response) {
+  54:         
+  55            dispatch(FPWDAction("cpwd"));
+
+  84            dispatch(BtnLoaderAction(""));
+  85:          
+  86          });
+
+v7\src\Components\OtpDialog.jsx:
+  27        .then((res) => {
+  28:        
+  29          dispatch(OtpAction(false));
+
+  32        .catch((err) => {
+  33:       
+  34          toast.error("Invalid OTP");
+
+v7\src\Components\ProductCard.jsx:
+   24            })
+   25:           .catch((error) => console.log(error));
+   26        } else {
+
+   38            .catch((error) => {
+   39:           
+   40            });
+
+  102          .catch((error) => {
+  103:          
+  104          });
+
+v7\src\Components\Rating.jsx:
+  38        };
+  39:    
+  40        axios
+
+v7\src\Components\SidebarCartCard.jsx:
+  29          .catch((err) => {
+  30:          
+  31          });
+
+  53          .catch((error) => {
+  54:          
+  55          });
+
+  84          })
+  85:         .catch((error) => {});
+  86      } else {
+
+v7\src\Components\SignUpDialog.jsx:
+  84            dispatch(BtnLoaderAction(null));
+  85:          
+  86            toast.error("Invelid Number or Password");
+
+v7\src\Pages\Checkout.js:
+  112                };
+  113:              
+  114                product.push(obj);
+
+  142        .catch((error) => {
+  143:       
+  144        });
+
+  180          .then((response) => {
+  181:          
+  182            if (response.data) {
+
+v7\src\Pages\Contact.jsx:
+  21    const submitHandle = () => {
+  22:    
+  23    };
+
+v7\src\Pages\FoodHome.jsx:
+   26      Products?.filter((item) => item.mainCategory === "Food") || [];
+   27:  
+   28    const ref1 = useRef(null);
+
+   40            })
+   41:           .catch((error) => {});
+   42        } else {
+
+   54            .catch((error) => {
+   55:            
+   56            });
+
+  118          .catch((error) => {
+  119:          
+  120          });
+
+v7\src\Pages\Order.jsx:
+  19    useEffect(() => {
+  20:    
+  21      if (user?._id) {
+
+  34      userOrder && userOrder?.filter((item) => item?.orderDelivered === false);
+  35:    
+  36    const oldOrder =
+
+v7\src\Pages\ProdHome.js:
+  73              .catch((error) => {  
+  74:            
+  75              });
+
+v7\src\Routing\Routing.js:
+  31          .catch((err) => {
+  32:          
+  33          });
+
+zeto-admin-frontend\src\Components\EditDialog.jsx:
+  29          .then((res) => {
+  30:          
+  31            dispatch(UserAction({ ...user, phoneNumber: mobile }));
+
+zeto-admin-frontend\src\Components\ForgotPassword.jsx:
+  53          if (response) {
+  54:        
+  55            dispatch(FPWDAction("cpwd"));
+
+  84            dispatch(BtnLoaderAction(""));
+  85:         
+  86          });
+
+zeto-admin-frontend\src\Components\OtpDialog.jsx:
+  27        .then((res) => {
+  28:       
+  29          dispatch(OtpAction(false));
+
+  32        .catch((err) => {
+  33:       
+  34          toast.error("Invalid OTP");
+
+zeto-admin-frontend\src\Components\ProductCard.jsx:
+   24            })
+   25:           .catch((error) => {});
+   26        } else {
+
+   38            .catch((error) => {
+   39:           
+   40            });
+
+  102          .catch((error) => {
+  103:         
+  104          });
+
+zeto-admin-frontend\src\Components\SidebarCartCard.jsx:
+  29          .catch((err) => {
+  30:          
+  31          });
+
+  53          .catch((error) => {
+  54:         
+  55          });
+
+  84          })
+  85:         .catch((error) =>{});
+  86      } else {
+
+zeto-admin-frontend\src\Components\SignUpDialog.jsx:
+  84            dispatch(BtnLoaderAction(null));
+  85:         
+  86            toast.error("Invelid Number or Password");
+
+zeto-admin-frontend\src\Pages\Checkout.js:
+  112                };
+  113:             
+  114                product.push(obj);
+
+  142        .catch((error) => {
+  143:         console.log(error);
+  144        });
+
+  180          .then((response) => {
+  181:        
+  182            if (response.data) {
+
+zeto-admin-frontend\src\Pages\Contact.jsx:
+  21    const submitHandle = () => {
+  22:    
+  23    };
+
+zeto-admin-frontend\src\Pages\FoodHome.jsx:
+   25      Products?.filter((item) => item.mainCategory === "Food") || [];
+   26:  
+   27    const ref1 = useRef(null);
+
+   39            })
+   40:           .catch((error) =>{});
+   41        } else {
+
+   53            .catch((error) => {
+   54:            
+   55            });
+
+  117          .catch((error) => {
+  118:          
+  119          });
+
+zeto-admin-frontend\src\Pages\Order.jsx:
+  19    useEffect(() => {
+  20:    
+  21      if (user?._id) {
+
+  34      userOrder && userOrder?.filter((item) => item?.orderDelivered === false);
+  35:    
+  36    const oldOrder =
+
+zeto-admin-frontend\src\Pages\ProdHome.js:
+  73              .catch((error) => {
+  74:               
+  75              });
+
+zeto-admin-frontend\src\Routing\Routing.js:
+  31          .catch((err) => {
+  32:          
+  33          });

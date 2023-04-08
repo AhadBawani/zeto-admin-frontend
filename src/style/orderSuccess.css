@@ -1,0 +1,59 @@
+.order_success {
+  margin-top: 4rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order_success > span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ee1e1e;
+}
+.order_success h1 {
+  font-size: 40px;
+  line-height: 75px;
+
+  color: #2f2d2d;
+}
+.order_success h4 {
+  font-size: 36px;
+  line-height: 24px;
+  /* or 50% */
+  color: #8c8b8b;
+}
+.order_success button {
+  width: 338px;
+  height: 40px;
+
+  background: #ff1d1d;
+  border-radius: 32px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 38px;
+
+  color: #ffffff;
+}
+@media screen and (max-width:500px) {
+  .order_success {
+    margin-top: 3.5rem;
+    display: flex;
+  }
+  .order_success > span {
+    font-size: 18px;
+    line-height: 20px;
+
+  }
+  .order_success h1 {
+    font-size: 20px;
+  }
+  .order_success h4 {
+    font-size: 20px;
+
+  }
+
+}

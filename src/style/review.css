@@ -1,0 +1,115 @@
+.r-body {
+   margin: 1rem 3rem;
+   min-height: 70vh;
+   display: grid;
+   grid-template-columns: 30% 70%;
+}
+.r-left {
+   margin-top: 3.5rem;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+}
+.r-left > strong {
+   font-size: 1.7rem;
+}
+.r-left .star {
+   font-size: 2rem;
+}
+
+.r-left > span {
+   display: flex;
+   align-items: center;
+}
+.rating-bar {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   white-space: nowrap;
+}
+
+.rating-bar div {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.rating-bar div span:nth-child(3) {
+   width: 3rem;
+}
+.rating-bar div span:nth-child(2) {
+   position: relative;
+   width: 12rem;
+   margin: 5px 0;
+   height: 2rem;
+   background: #ececec;
+   border-radius: 5px;
+   z-index: 2;
+}
+
+.rating-bar div span:nth-child(2) span {
+   position: absolute;
+   z-index: 5;
+   content: "";
+   border-radius: 5px;
+   height: 2rem;
+   background: #ffb800;
+}
+
+.r-sorting {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.r-sorting > span {
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+}
+.r-sorting select {
+   height: 2rem;
+   outline: none;
+   border: none;
+}
+.reviewer span strong {
+   margin: 0;
+   padding: 0;
+}
+.reviewer .star-rating button {
+   font-size: 2rem !important;
+}
+.all-review-flex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.user-review .reviewer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.user-review p {
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 28px;
+   color: #000000;
+}
+
+.on {
+   color: rgb(252, 229, 22);
+}
+.off {
+   color: #ccc;
+}
+
+@media screen and (max-width: 500px) {
+   .r-body {
+      margin: 1rem 1rem;
+      grid-template-columns: 100%;
+   }
+   .r-sorting {
+      margin: 1rem 0;
+   }
+   .rating-bar div span:nth-child(2) {
+      width: 60vw;
+   }
+}
