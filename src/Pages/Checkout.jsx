@@ -227,7 +227,7 @@ const Checkout = () => {
       setChecked(!checked)
    }
    const [time, setTime] = useState(new Date().getHours())
-   const orderLimit = 18
+   const orderLimit = 17
    return (
       <>
          <div className={editInfo ? "backDark" : ""}></div>
